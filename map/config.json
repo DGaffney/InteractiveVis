@@ -1,0 +1,80 @@
+{
+    "text": {
+        "title": "Oxford Internet Institute",
+        "intro": "Literacy is an often overlooked factor in examining the flows, production and consumption of knowledge. This map visualises overall literacy rates and rates of literacy by gender around the world.",
+        "more": "<h3>Data</h3> <p>It is a challenge to obtain statistics that uniformly define"
+    },
+    "global": {
+        "data": "data.json",
+        "type": "map",
+        "version": 1
+    },
+    "features": {
+        "countryHighlightColor": "#990000",
+        "bars": {
+            "maxValue": 100,
+            "units": "%"
+        },
+        "legend_male": {
+            "title": "Male Literacy",
+           	"label": "Male",
+            "style": "bar",
+            "type": "alternative_statistic",
+			"cutpoints":[50.5,60.5,70.5,80.5,90.5],
+			"labels":["0 - 50%","51 - 60%","61 - 70%","71 - 80%","81 - 90%","91 - 100%"],
+			"colors":["#e0e2e2","#bac3cf","#95aabd","#7494ae","#50799d","#2e668e"]
+        },
+        "legend_total": {
+            "title": "Adult Literacy",
+           	"label": "Total",
+            "style": "bar",
+            "type": "main_statistic",
+			"cutpoints":[50.5,60.5,70.5,80.5,90.5],
+			"labels":["0 - 50%","51 - 60%","61 - 70%","71 - 80%","81 - 90%","91 - 100%"],
+			"colors":["#e0e2e2","#bac3cf","#95aabd","#7494ae","#50799d","#2e668e"]
+        },
+        "stats": [
+            "total",
+            "male",
+            "female",
+            "year",
+            "definition"
+        ],
+        "legend_year": {
+            "labels": "",
+            "title": "Year",
+           	"label": "Year",
+            "style": "text",
+            "type": "not_displayed",
+            "cutpoints": "",
+            "colors": ""
+        },
+        "onLoad":{
+        	"datapoint": "world",
+        	"enabled": true
+        	},
+        "legend_female": {
+			"cutpoints":[50.5,60.5,70.5,80.5,90.5],
+			"labels":["0 - 50%","51 - 60%","61 - 70%","71 - 80%","81 - 90%","91 - 100%"],
+			"colors":["#e0e2e2","#bac3cf","#95aabd","#7494ae","#50799d","#2e668e"],
+            "title": "Female Literacy",
+           	"label": "Female",
+            "style": "bar",
+            "type": "alternative_statistic"
+        },
+        "legend_definition": {
+            "labels": "",
+            "title": "Definition",
+           	"label": "Definition",
+            "style": "text",
+            "type": "not_displayed",
+            "cutpoints": "",
+            "colors": ""
+        }
+    },
+    "logo": {
+        "text": "Oxford Internet Institute",
+        "link": "http://www.oii.ox.ac.uk/",
+        "file": "images/oii_brand.png"
+    }
+}
